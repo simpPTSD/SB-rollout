@@ -1,0 +1,44 @@
+/* Main root layout with transparent background */
+.root {
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white */
+    -fx-padding: 20;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 255, 0.3), 10, 0.5, 0, 0); /* Blue shadow */
+}
+
+/* Text fields with semi-transparent background */
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-text-fill: white;
+    -fx-border-color: rgba(0, 0, 255, 0.8); /* Blue border */
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* ComboBox with semi-transparent background */
+.combo-box {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-border-color: rgba(0, 0, 255, 0.8);
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/* Buttons with blue background */
+.button {
+    -fx-background-color: linear-gradient(to right, #2a5298, #1e3c72); /* Blue gradient */
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 255, 0.5), 5, 0.5, 0, 0);
+}
+
+/* TableView with transparent rows and blue borders */
+.table-view {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-border-color: rgba(0, 0, 255, 0.5);
+}
+
+.table-column {
+    -fx-text-fill: white;
+}

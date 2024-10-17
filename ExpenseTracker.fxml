@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+       xmlns="http://javafx.com/javafx/8"
+       fx:controller="demo.ExpenseTrackerController"
+       alignment="CENTER"
+       styleClass="root"
+       spacing="15"><!-- Corrected padding format -->
+
+
+
+<Label text="Enter Expense Amount" styleClass="label"/>
+<TextField fx:id="expenseField" promptText="Enter a note or description" styleClass="text-field"/>
+
+<Label text="Enter Description" styleClass="label"/>
+<TextField fx:id="descriptionField" promptText="Enter a note or description" styleClass="text-field"/>
+
+<ComboBox fx:id="categoryComboBox" styleClass="combo-box"/>
+
+<HBox alignment="CENTER">
+    <Button text="Add Expense" onAction="#handleAddExpense" styleClass="button"/>
+</HBox>
+
+<TableView fx:id="expenseTable" styleClass="table-view">
+    <columns>
+        <TableColumn text="Category" fx:id="categoryColumn" styleClass="table-column"/>
+        <TableColumn text="Description" fx:id="descriptionColumn" styleClass="table-column"/>
+        <TableColumn text="Amount" fx:id="amountColumn" styleClass="table-column"/>
+        <TableColumn text="Date" fx:id="dateColumn" styleClass="table-column"/>
+    </columns>
+</TableView>
+
+</VBox>
